@@ -1,4 +1,4 @@
-
+#/usr/bin/python3
 
 def print_grid(grid):
     for i in range(9):
