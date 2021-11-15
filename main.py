@@ -5,6 +5,8 @@ def print_grid(grid):
         for j in range(9):
             print(grid[i][j], end=" ")
         print()
+def generuj_sudoku():
+    pass
 
 test_grid = [[2, 5, 0, 0, 3, 0, 9, 0, 1],
             [0, 1, 0, 0, 0, 4, 0, 0, 0],
