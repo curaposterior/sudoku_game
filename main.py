@@ -5,6 +5,8 @@ def print_grid(grid):
         for j in range(9):
             print(grid[i][j], end=" ")
         print()
+def generuj_sudoku():
+    pass
 
 def findEmptyCell(grid, i=0,j=0):
     for num in range(81):
