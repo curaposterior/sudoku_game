@@ -64,7 +64,6 @@ class Sudoku():
         10 11 12
         20 21 22
         '''
-        
         for i in range(3):
             square1 = grid[i][:3]
             if elem in square1:
@@ -79,13 +78,13 @@ class Sudoku():
     # def generuj_sudoku():
     #     pass
 
-    def solveSudoku(self, grid):
-        if findEmptyCell(grid):
-            return True
-        else:
-            i, j = findEmptyCell(grid)
-            for elem in range(1,10):
-                print('test')
+    # def solveSudoku(self, grid):
+    #     if findEmptyCell(grid):
+    #         return True
+    #     else:
+    #         i, j = findEmptyCell(grid)
+    #         for elem in range(1,10):
+    #             print('test')
         
 
 
