@@ -5,7 +5,7 @@ class Sudoku:
         '''zainicjowanie argumentow'''
         self.grid = grid
     
-    def print_grid(grid):
+    def print_grid(self, grid):
         for i in range(len(grid)):
             if i % 3 == 0 and i != 0:
                 print("- - - - - - - - - - - - - ")
