@@ -5,12 +5,19 @@ class Sudoku:
         '''zainicjowanie argumentow'''
         self.grid = grid
     
-    def print_grid(self):
-        '''Wypisanie wartosci w macierzy'''
-        for i in range(9):
-            for j in range(9):
-                print(self.grid[i][j], end=" ")
-            print()
+    def print_grid(grid):
+        for i in range(len(grid)):
+            if i % 3 == 0 and i != 0:
+                print("- - - - - - - - - - - - - ")
+
+            for j in range(len(grid[0])):
+                if j % 3 == 0 and j != 0:
+                    print(" | ", end="")
+
+                if j == 8:
+                    print(grid[i][j])
+                else:
+                    print(str(grid[i][j]) + " ", end="")
     
     def findEmptyCell(self, i=0, j=0):
         '''Znajduje nastepna wolna komórke'''
